@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Music Player</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+
+            <span id="logo">JS Music Player</span>
+
+            <div id="btn-open-file">
+                <i class="far fa-file-audio"></i>
+                <span>Choose Music</span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="coverPhoto" id="cover"></div>
+            <div class="songInfo">
+                <div class="infoLeft">
+                    <span>Song</span>
+                    <span>Album</span>
+                    <span>Artist</span>
+                    <span>Music Director</span>
+                    <span>Year</span>
+                </div>
+
+                <div class="infoRight">
+                    <span id="title">Select Song</span>
+                    <span id="album">Select Song</span>
+                    <span id="artist">Select Song</span>
+                    <span id="musicDirector">Select Song</span>
+                    <span id="year">Select Song</span>
+                </div>
+                <span id="rwdInfo" style="display: none;">Neelo Vunnadi<br>King Johnson Victor and Surmukhi</span>
+            </div>
+        </div>
+        <img src="bgs/eq.gif" alt="playing..." id="equilizer">
+        <div class="controls">
+            <input type="range" min="0" max="100" value="0" id="progressBar">
+            <div id="btn-controls">
+                <i class="fas fa-play-circle" id="btn-play"></i>
+            </div>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
